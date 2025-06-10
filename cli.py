@@ -1,4 +1,4 @@
-# %%
+# Import Libraries
 import mysql.connector as dbconn # The connection
 from mysql.connector import Error # Handles errors while connecting
 from prettytable import PrettyTable # Puts the sql query outputs in a table format instead of a deafult tuple

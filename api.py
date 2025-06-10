@@ -1,4 +1,3 @@
-# %%
 # Import Libraries 
 import requests
 import mysql.connector as dbconn
@@ -34,7 +33,7 @@ def load(data):
             Application_ID VARCHAR(255) PRIMARY KEY,\
             Gender VARCHAR(255),\
             Married VARCHAR(255),\
-            Dependents INT,\
+            Dependents VARCHAR(255),\
             Education VARCHAR(255),\
             Self_Employed VARCHAR(255),\
             Credit_History INT,\
@@ -63,5 +62,3 @@ api_data = fetch_api()
     # if the data is fetched successfully, load it into MySQL database 
 if api_data:
     load(api_data)
-
-
